@@ -2,13 +2,16 @@
   {
     "context": "Workspace",
     "bindings": {
-      "shift shift": "file_finder::Toggle"
+      "shift shift": "file_finder::Toggle",
+      "cmd-b": "workspace::ToggleRightDock",
+      "alt-cmd-b": "workspace::ToggleLeftDock",
+      "cmd-shift-g": "git_panel::ToggleFocus"
     }
   },
   {
     "context": "Editor",
     "bindings": {
-      "cmd-'": "editor::ShowWordCompletions",
+      "cmd-'": "editor::ShowCompletions",
       "cmd-e": "tab_switcher::Toggle"
     }
   },
@@ -23,18 +26,6 @@
     "context": "Editor && vim_mode == insert",
     "bindings": {
       "j k": "vim::NormalBefore"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "cmd-b": "workspace::ToggleRightDock"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "alt-cmd-b": "workspace::ToggleLeftDock"
     }
   }
 ]
