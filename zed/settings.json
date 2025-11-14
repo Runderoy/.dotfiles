@@ -113,9 +113,6 @@
     }
   },
 
-  "show_signature_help_after_edits": true,
-  "auto_signature_help": true,
-
   "title_bar": {
     "show_menus": false,
     "show_sign_in": true,
@@ -187,7 +184,7 @@
 
   "base_keymap": "VSCode",
   "vim_mode": true,
-  "relative_line_numbers": true,
+  "relative_line_numbers": "wrapped",
 
   "ui_font_family": "JetBrainsMono Nerd Font",
   "ui_font_size": 18,
@@ -200,8 +197,8 @@
 
   "theme": {
     "mode": "system",
-    "light": "Jellybeans",
-    "dark": "Jellybeans"
+    "light": "Mellow",
+    "dark": "Mellow"
   },
 
   "active_pane_modifiers": {
