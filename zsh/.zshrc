@@ -21,6 +21,7 @@ compinit
 # End of Docker CLI completions
 
 # uv
+export PATH="$HOME/.local/bin:$PATH"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 
@@ -35,8 +36,8 @@ export NVM_DIR="$HOME/.nvm"
 # go
 export PATH=$PATH:$(go env GOPATH)/bin
 
-# fuck
-eval $(thefuck --alias)
+# rust
+. "$HOME/.cargo/env"
 
 clear
 
