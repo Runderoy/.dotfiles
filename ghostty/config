@@ -1,5 +1,7 @@
 term = "xterm-256color"
 
+theme = mellow
+
 font-family = "JetBrainsMono Nerd Font"
 font-style = "Regular"
 font-style-bold = "Bold"
@@ -11,9 +13,10 @@ cursor-style = block
 shell-integration-features = no-cursor
 
 background = #111111
-background-opacity = 0.8
+background-opacity = 0.9
 background-blur = 100
 
 window-padding-y = 15
 window-padding-x = 15
 
+macos-titlebar-style = "tabs"
