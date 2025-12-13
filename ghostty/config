@@ -1,6 +1,6 @@
 term = "xterm-256color"
 
-theme = mellow
+theme = vesper
 
 font-family = "JetBrainsMono Nerd Font"
 font-style = "Regular"
@@ -19,4 +19,4 @@ background-blur = 100
 window-padding-y = 15
 window-padding-x = 15
 
-macos-titlebar-style = "tabs"
+macos-titlebar-style = "transparent"
