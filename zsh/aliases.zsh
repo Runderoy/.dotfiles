@@ -13,7 +13,15 @@ alias tree='eza --tree -ah'
 
 alias hg='history | rg'
 
-alias f='fzf --bind "enter:become(nvim {})" --style full --preview "bat --style=numbers --color=always {}"'
+alias f='fd --type f --hidden --follow --exclude .git \
+  | fzf --preview "bat --style=numbers --color=always {}" \
+        --bind "enter:become(nvim {})"'
+
+alias rgf='rg --line-number --no-heading --color=always "" \
+  | fzf --ansi \
+        --delimiter : \
+        --preview "bat --style=numbers --color=always {1} --highlight-line {2}" \
+        --bind "enter:become(nvim +{2} {1})"'
 
 alias bat='bat --style=numbers'
 
