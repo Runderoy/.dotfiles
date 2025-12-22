@@ -1,7 +1,7 @@
 {
   "languages": {
     "Python": {
-      "language_servers": ["basedpyright", "ruff", "ty"],
+      "language_servers": ["basedpyright", "ruff"],
       "format_on_save": "on",
       "formatter": [
         { "code_action": "source.organizeImports.ruff" },
@@ -43,7 +43,7 @@
     "show_type_hints": true,
     "show_parameter_hints": true,
     "show_other_hints": true,
-    "show_background": true,
+    "show_background": false,
     "edit_debounce_ms": 700,
     "scroll_debounce_ms": 50,
     "toggle_on_modifiers_press": {
@@ -85,7 +85,7 @@
     "cursor_shape": "bar",
     "font_size": 18.0,
     "toolbar": {
-      "breadcrumbs": true
+      "breadcrumbs": false
     }
   },
 
@@ -105,7 +105,6 @@
 
   "git": {
     "inline_blame": {
-      "enabled": true,
       "delay_ms": 0,
       "padding": 7,
       "min_column": 0,
@@ -176,7 +175,7 @@
   },
 
   "toolbar": {
-    "breadcrumbs": true,
+    "breadcrumbs": false,
     "quick_actions": false,
     "selections_menu": false,
     "agent_review": false,
@@ -198,8 +197,8 @@
 
   "theme": {
     "mode": "system",
-    "light": "Mellow",
-    "dark": "Mellow"
+    "light": "JetBrains Dark",
+    "dark": "JetBrains Dark"
   },
 
   "active_pane_modifiers": {
