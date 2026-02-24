@@ -45,17 +45,7 @@ return {
         }
       })
 
-      vim.lsp.enable('gopls', {
-        settings = {
-          gopls = {
-            analyses = {
-              unusedparams = true,
-            },
-            staticcheck = true,
-            gofumpt = true,
-          },
-        },
-      })
+      vim.lsp.enable('gopls')
     end,
   },
   {
@@ -66,6 +56,7 @@ return {
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
       "hrsh7th/cmp-cmdline",
+      "hrsh7th/vim-vsnip"
     },
     config = function()
       local cmp = require("cmp")
