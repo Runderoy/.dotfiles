@@ -83,7 +83,7 @@
     "button": false,
     "blinking": "on",
     "cursor_shape": "bar",
-    "font_size": 18.0,
+    "font_size": 18,
     "toolbar": {
       "breadcrumbs": false
     }
@@ -187,18 +187,20 @@
   "relative_line_numbers": "wrapped",
 
   "ui_font_family": "JetBrainsMono Nerd Font",
-  "ui_font_size": 18,
+  "ui_font_size": 20,
+  "ui_font_weight": 600.0,
 
   "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 18.0,
+  "buffer_font_size": 18,
+  "buffer_font_weight": 600.0,
   "buffer_line_height": {
-    "custom": 1.5
+    "custom": 1.6
   },
 
   "theme": {
     "mode": "system",
-    "light": "JetBrains Dark",
-    "dark": "JetBrains Dark"
+    "light": "Modern Vesper",
+    "dark": "Modern Vesper"
   },
 
   "active_pane_modifiers": {
@@ -210,7 +212,7 @@
   "gutter": {
     "line_numbers": true,
     "runnables": false,
-    "breakpoints": false,
+    "breakpoints": true,
     "folds": true,
     "min_line_number_digits": 0
   },
