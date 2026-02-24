@@ -32,8 +32,11 @@ alias p='python3'
 alias python='python3'
 alias pip='pip3'
 alias va='source .venv/bin/activate'
+alias ui='uv init --bare'
+alias ua='uv add'
 alias ur='uv run'
 alias urp='uv run python'
+
 alias dpc='find . -type d -name "__pycache__" -exec rm -rf {} +'
 
 alias rc='ruff check'
@@ -59,6 +62,8 @@ alias gsw='git switch'
 alias gm='git merge'
 alias gr='git reset'
 alias gd='git diff'
+
+alias lg='lazygit'
 
 alias bi='brew install'
 alias br='brew remove'
