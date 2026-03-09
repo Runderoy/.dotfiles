@@ -23,3 +23,6 @@ window-padding-x = 15
 
 window-theme = "system"
 macos-titlebar-style = "native"
+
+keybind = global:opt+backquote=toggle_quick_terminal
+
