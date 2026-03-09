@@ -5,7 +5,7 @@ vim.keymap.set("n", "<Esc>", ":nohlsearch<CR>")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
-vim.api.nvim_set_keymap("n", "<leader>e", ":Neotree focus reveal=true position=right <CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>e", ":e . <CR>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("n", "<leader>ff", ":Telescope find_files <CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>fg", ":Telescope live_grep <CR>", { noremap = true, silent = true })
