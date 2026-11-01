@@ -4,10 +4,7 @@ alias c='cd $(zoxide query --interactive)'
 alias cdd='cd ../'
 
 alias ls='eza'
-alias la='ls -a'
-alias ll='ls -l'
-alias lh='ls -h'
-alias l='ls -lah --no-permissions --git'
+alias l='ls -la --git'
 
 alias tree='eza --tree -ah'
 
@@ -63,7 +60,7 @@ alias gm='git merge'
 alias gr='git reset'
 alias gd='git diff'
 
-alias lg='lazygit'
+alias lg='lazygit --sm half'
 
 alias bi='brew install'
 alias br='brew remove'
