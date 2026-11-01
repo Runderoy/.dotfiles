@@ -1,7 +1,10 @@
 {
+  "cli_default_open_behavior": "new_window",
+  "snippet_sort_order": "top",
   "languages": {
     "Python": {
-      "language_servers": ["basedpyright", "ruff"],
+      "show_edit_predictions": false,
+      "language_servers": ["ty", "ruff"],
       "format_on_save": "on",
       "formatter": [
         { "code_action": "source.organizeImports.ruff" },
@@ -16,18 +19,6 @@
   },
 
   "lsp": {
-    "basedpyright": {
-      "settings": {
-        "basedpyright.analysis": {
-          "typeCheckingMode": "standard",
-          "diagnosticMode": "workspace",
-          "autoImportCompletions": true
-        }
-      },
-      "initialization_options": {
-        "disablePullDiagnostics": true
-      }
-    },
     "ruff": {
       "initialization_options": {
         "settings": {
@@ -118,8 +109,7 @@
     "show_user_picture": true,
     "show_onboarding_banner": true,
     "show_project_items": true,
-    "show_branch_name": true,
-    "show_branch_icon": false
+    "show_branch_name": true
   },
 
   "status_bar": {
@@ -145,12 +135,9 @@
     "button": false,
     "dock": "right"
   },
-  "notification_panel": {
-    "button": false
-  },
+
   "git_panel": {
     "button": false,
-    "sort_by_path": false,
     "status_style": "icon",
     "dock": "right"
   },
@@ -160,15 +147,17 @@
   },
 
   "project_panel": {
+    "folder_indicator": "chevron",
+    "diagnostic_badges": true,
+    "hide_hidden": false,
     "starts_open": true,
     "git_status": true,
-    "folder_icons": false,
     "file_icons": true,
     "hide_gitignore": false,
     "button": false,
     "auto_fold_dirs": false,
     "auto_reveal_entries": false,
-    "dock": "right",
+    "dock": "left",
     "hide_root": true,
     "entry_spacing": "standard",
     "show_diagnostics": "all"
@@ -198,9 +187,9 @@
   },
 
   "theme": {
-    "mode": "system",
-    "light": "Modern Vesper",
-    "dark": "Modern Vesper"
+    "mode": "dark",
+    "light": "JetBrains Islands Light",
+    "dark": "JetBrains Dark"
   },
 
   "active_pane_modifiers": {
@@ -219,6 +208,7 @@
 
   "disable_ai": true,
   "agent": {
+    "dock": "right",
     "button": false,
     "model_parameters": []
   },
