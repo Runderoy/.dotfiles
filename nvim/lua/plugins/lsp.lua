@@ -3,40 +3,9 @@ return {
     "neovim/nvim-lspconfig",
     lazy = false,
     config = function()
-      vim.lsp.enable('basedpyright')
-
-      vim.lsp.config('basedpyright', {
-        settings = {
-          basedpyright = {
-            analysis = {
-              typeCheckingMode = "standard",
-              diagnosticMode = "openFilesOnly",
-              inlayHints = {
-                callArgumentNames = true
-              }
-            }
-          }
-        }
-      })
-
-      root_markers = { "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", "pyrightconfig.json", ".git" }
-
-      vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
-        pattern = "*.py",
-        callback = function()
-          local bufnr = vim.api.nvim_get_current_buf()
-
-          vim.diagnostic.config({
-            virtual_text = true,
-          })
-
-          local opts = { noremap=true, silent=true, buffer=bufnr }
-          vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-        end,
-      })
+      vim.lsp.enable('ty')
 
       vim.lsp.enable('ruff')
-
       vim.lsp.config('ruff', {
         init_options = {
           settings = {

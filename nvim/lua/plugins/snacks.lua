@@ -21,6 +21,8 @@ return {
         expand = true
     },
     picker = {
+        hidden = true,
+        ignored = true,
         sources = {
             explorer = {
                 layout = {
