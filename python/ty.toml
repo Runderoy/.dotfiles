@@ -1,0 +1,5 @@
+[analysis]
+return-type-inference = "always"
+strict-equality-semantics = true
+strict-generic-narrowing = true
+
