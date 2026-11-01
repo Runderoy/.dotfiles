@@ -19,6 +19,15 @@
   },
 
   "lsp": {
+    "ty": {
+      "settings": {
+        "configurationFile": "~/.config/ty/ty.toml",
+        "diagnosticMode": "workspace",
+        "completions": {
+          "completeFunctionParentheses": true
+        }
+      }
+    },
     "ruff": {
       "initialization_options": {
         "settings": {
