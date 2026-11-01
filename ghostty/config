@@ -1,6 +1,8 @@
 term = "xterm-256color"
 
 theme = vesper
+macos-icon = "custom"
+macos-custom-icon = "~/.config/ghostty/kanagawa-dragon.icns"
 
 font-family = "JetBrainsMono Nerd Font"
 font-style = "Regular"
@@ -20,9 +22,12 @@ background-blur = 100
 
 window-padding-y = 15
 window-padding-x = 15
+window-padding-color = extend
 
 window-theme = "system"
 macos-titlebar-style = "native"
 
 keybind = global:opt+backquote=toggle_quick_terminal
 
+window-width = 160
+window-height = 40
